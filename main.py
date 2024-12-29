@@ -239,6 +239,7 @@ class MazeGUI:
     def reset_agent(self):
         ''' Reset anything agent learned '''
         self.agent.reset()
+        self.average_reward[self.agent_name] = []
     
     def train_loop(self):
         epoch = 0
